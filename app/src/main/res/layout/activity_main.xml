@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <Button
+            android:id="@+id/main_load"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingStart="8dp"
+            android:paddingEnd="4dp"
+            android:text="@string/load_data" />
+
+        <Button
+            android:id="@+id/main_sort"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingStart="4dp"
+            android:paddingEnd="8dp"
+            android:text="@string/sort" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/main_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#11000000"
+        android:drawableEnd="@drawable/ic_search"
+        android:hint="@string/cryptocurrency"
+        android:imeOptions="actionDone"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:padding="16dp"
+        android:singleLine="true" />
+
+    <FrameLayout
+        android:id="@+id/main_frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>

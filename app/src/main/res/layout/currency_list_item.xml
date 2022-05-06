@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingTop="16dp">
+
+    <TextView
+        android:id="@+id/currency_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/icon_bg"
+        android:gravity="center"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:textColor="@color/white"
+        tools:text="C" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:divider="?android:dividerHorizontal"
+        android:orientation="vertical"
+        android:showDividers="end">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+            <TextView
+                android:id="@+id/currency_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="start|center_vertical"
+                tools:text="Crypto.com" />
+
+            <TextView
+                android:id="@+id/currency_symbol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingStart="16dp"
+                android:paddingEnd="8dp"
+                app:drawableEndCompat="@drawable/ic_chevron_right"
+                tools:text="CRO" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
